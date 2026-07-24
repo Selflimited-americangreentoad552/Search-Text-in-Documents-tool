@@ -20,7 +20,7 @@
 3. Launch the executable.
 4. Select a folder to index.
 5. Start searching.
-
+<img width="1536" height="1024" alt="c5ffc960-abcc-475d-acb0-55e47f1784d6" src="https://github.com/user-attachments/assets/bdc12434-4551-454b-b11d-ea9a4c03f022" />
 ---
 
 ## ❓ The Problem
