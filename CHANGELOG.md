@@ -30,6 +30,67 @@ empty list than a promise.
 
 ---
 
+## 4.1.0 · Alpha — 2026-10-11
+
+A release about what happens when a model lets you down, and about reading the app in your own language.
+
+### What changed
+
+- **A model chain now actually falls back.** When the model you selected fails to answer — overloaded,
+  unavailable, or returning something the app cannot read — the turn moves to the next model in the chain you
+  configured instead of stopping with an error. Previously the chain could be configured and saved but the run
+  never moved along it. The handover is exercised against a recorded model response of the shape that used to
+  strand a turn.
+- **Reporting a problem is in Arabic and French.** The report-a-problem form, the feature-request flow and the
+  ticket list were English-only. They are translated in both languages, which lifts overall coverage of the
+  interface text from about 15.8% to about 20.9% on each of those two languages.
+- **Counts follow Arabic plural rules.** Where the interface says something like "N comments", Arabic now picks
+  its dual, few and many forms instead of using the English "one / other" split. French uses its own three
+  forms. English is unchanged.
+- **Computer Use on Windows is offered only when the runtime that provides it is in the build.** The desktop
+  window no longer advertises a capability the installed package does not carry, and no longer logs an error at
+  every start for a feature the product does not sell.
+- **Sign-in goes to the host that actually serves it.** The waiting screen and the authorization request now
+  point at the same official access point, so the browser and the desktop can no longer send you to two
+  different consent screens.
+- **The desktop window reports what it blocked.** A content-security policy is now attached to the main window
+  in report-only mode: it does not yet refuse anything, it collects what would be refused so the next release can
+  turn it on with evidence rather than guesswork. Crash information from the renderer is recorded so a report
+  can say what actually happened.
+- **The terminal is the same release.** `idexal --version` prints this version number, and the terminal binary
+  published here is built from the same source as the installer.
+
+### What we are telling you plainly, rather than letting you discover
+
+- **Windows: built and inspected, not installed-and-run.** Both Windows artifacts were produced from this
+  release's source and verified by opening the package itself — the file list, the shipped languages, the
+  version resource inside the executable, and the checksums printed below. Neither was installed and launched on
+  a Windows machine as part of this record. That is why this release is Alpha and not Beta.
+- **macOS and Linux: nothing is published, and there is no date for it.** Both require a host this project does
+  not have, plus packaging tools that are not present on the machine that builds Windows.
+- **4.0.6 has no downloads, and cannot receive them.** Its installers exist and were built for that release, but
+  they are not attached to it, and a published release on the hosting service is immutable: an attempt to attach
+  them now is refused outright, which was confirmed against the live release today. This release supersedes it.
+  If you are on 4.0.6, install 4.1.0.
+- **Numbers, dates and times still follow your operating system's language, not the language you chose in the
+  app.** Amounts, relative times and date labels are formatted with the system locale in about a hundred places,
+  so an Arabic or French interface can still show English-style numbers. It is a known defect, it is listed, and
+  it is not fixed in this release.
+- **A turn that runs out of its declared round budget stops, and says so.** The limit you set on a task is
+  honoured; what happens after an unreadable model answer — retry once, or report unfinished — is still being
+  decided, so you may see a run end rather than silently continue.
+
+### Downloads
+
+| File | SHA-256 |
+| ---- | ------- |
+| `Idexal-4.1.0-win-x64.exe` | `656f99f4f2b7a580072d160b20e10b820fc0f52a8ec6e441129e1991b569c496` |
+| `Idexal-CLI-4.1.0-win-x64.exe` | `fa3547effcd57c56564628ce5e36525679d5d359e5334c05ce75d2079e983792` |
+
+The Windows installer is a guided wizard: it lets you choose the install folder, and it installs for the
+current user. Check the SHA-256 of what you download against the table above before running it.
+
+
 ## 4.0.6 · Alpha — 2026-10-01
 
 A release about the shape of the provider list, and about what a sign-in screen is allowed to claim.
